@@ -74,7 +74,7 @@ async def submit_answer(answerReq: AnswerRequest):
 async def end_interview(session_id: str):
     # Check valid session_id
     session = get_session(session_id)
-    if not session or session.status == InterviewEnumStatus.COMPLETED:
+    if not session:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Interview Session Not Found")
     
     session.status = InterviewEnumStatus.COMPLETED
