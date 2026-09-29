@@ -99,12 +99,22 @@ async def generate_questions_intro(job_title, job_description, resume_text):
 
 
 async def generate_report(answers=[]):
-    SYSTEM_PROMPT = f"""
+    answers_data = [
+    {
+        "question": a.question,
+        "answer": a.answer,
+        "skip": a.skip
+    }
+    for a in answers
+]
+
+   answers_json = json.dumps(answers_data, indent=2)
+   SYSTEM_PROMPT = f"""
         You are an expert AI interviewer who analyzes candidate answers
         based on the questions and provides feedback.
 
         Input:
-            {answers}
+            {answers_json}
 
         Input Structure:
             answers is an array containing objects.
