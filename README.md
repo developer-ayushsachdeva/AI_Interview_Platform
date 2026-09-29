@@ -283,6 +283,87 @@ Support dedicated interview types such as:
 
 ---
 
-## 3. Follow-Up Questions
+3. Follow-Up Questions
 
-Instead of immediately moving to a completely new question, the interviewer could ask deeper foll
+Instead of immediately moving to a completely new question, the interviewer could ask deeper follow-ups based on the candidate's answer.
+
+Question
+   ↓
+Candidate Answer
+   ↓
+AI Analysis
+   ↓
+Follow-Up Question
+   ↓
+Candidate Answer
+
+This would make the interaction closer to a real technical interview.
+
+4. Interview History
+
+Store previous interviews and allow users to compare:
+
+Previous results
+Interview performance
+Frequently missed topics
+Strengths
+Weak areas
+Improvement over time
+5. Personalized Interview Preparation
+
+Use historical performance to recommend what the candidate should practice next.
+
+6. Coding Interview Mode
+
+Add a coding environment with:
+
+Coding problems
+Code editor
+Test cases
+Code execution
+Time complexity analysis
+Space complexity analysis
+AI code review
+7. Voice & Communication Analysis
+
+Future versions could analyze additional communication characteristics such as:
+
+Speaking clarity
+Answer structure
+Excessive pauses
+Filler-word usage
+Conciseness
+
+These metrics would need to be implemented carefully and treated as feedback signals rather than definitive judgments about a candidate.
+
+8. Comprehensive Interview Reports
+
+Generate detailed reports covering:
+
+Overall result
+Technical performance
+Question-wise feedback
+Strengths
+Areas for improvement
+Recommended topics
+Suggested practice plan
+🌐 Live Demo
+
+https://ai-mockinterview-platform.onrender.com/
+
+📌 Project Status
+
+Completed — Deployed MVP
+
+The current version implements the core voice-based interview workflow using resume and job information, AI-powered questioning, speech interaction, response processing, and final interview results.
+
+👨‍💻 Author
+
+Ayush Sachdeva
+
+B.Tech Information Technology
+Galgotias College of Engineering and Technology
+
+GitHub: https://github.com/developer-ayushsachdeva
+
+⭐ If you find the project interesting, consider giving the repository a star!
