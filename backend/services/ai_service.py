@@ -107,8 +107,7 @@ async def generate_report(answers=[]):
     }
     for a in answers
 ]
-
-   answers_json = json.dumps(answers_data, indent=2)
+    answers_json = json.dumps(answers_data, indent=2)
    SYSTEM_PROMPT = f"""
         You are an expert AI interviewer who analyzes candidate answers
         based on the questions and provides feedback.
