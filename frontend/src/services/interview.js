@@ -49,7 +49,7 @@
 
 import axios from "axios";
 
-const BASE_URL = "http://127.0.0.1:8000/interview";
+const BASE_URL = "https://ai-interview-platform-g39c.onrender.com/interview";
 
 // Generate interview questions and create a session
 export const generateQuestionsAPI = async (formData) => {
